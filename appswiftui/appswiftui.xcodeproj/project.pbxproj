@@ -11,6 +11,7 @@
 		D72BA1872B86B1DC001AB906 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BA1862B86B1DC001AB906 /* ContentView.swift */; };
 		D72BA1892B86B1DE001AB906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72BA1882B86B1DE001AB906 /* Assets.xcassets */; };
 		D72BA18C2B86B1DE001AB906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72BA18B2B86B1DE001AB906 /* Preview Assets.xcassets */; };
+		D72BA1932B8BB68D001AB906 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BA1922B8BB68D001AB906 /* Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D72BA1862B86B1DC001AB906 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D72BA1882B86B1DE001AB906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72BA18B2B86B1DE001AB906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D72BA1922B8BB68D001AB906 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D72BA1842B86B1DC001AB906 /* appswiftuiApp.swift */,
 				D72BA1862B86B1DC001AB906 /* ContentView.swift */,
+				D72BA1922B8BB68D001AB906 /* Navigation.swift */,
 				D72BA1882B86B1DE001AB906 /* Assets.xcassets */,
 				D72BA18A2B86B1DE001AB906 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72BA1932B8BB68D001AB906 /* Navigation.swift in Sources */,
 				D72BA1872B86B1DC001AB906 /* ContentView.swift in Sources */,
 				D72BA1852B86B1DC001AB906 /* appswiftuiApp.swift in Sources */,
 			);
