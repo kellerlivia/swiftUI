@@ -12,6 +12,8 @@ struct ContentView: View {
     @State var email: String = ""
     @State var password: String = ""
     
+    @State private var isPresented = false
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -39,6 +41,7 @@ struct ContentView: View {
                 
                 Button(action: {
                     print("botao clicado")
+                    isPresented.toggle()
                 }, label: {
                     Text("login")
                         .frame(height: 40)
@@ -47,6 +50,12 @@ struct ContentView: View {
                         .font(.system(size: 20, weight: .bold))
                         .background(.pink)
                         .cornerRadius(8)
+                })
+//                .sheet(isPresented: $isPresented, content: {
+//                    SheetView()
+//                })
+                .fullScreenCover(isPresented: $isPresented, content: {
+                    SheetView()
                 })
                 
                 HStack {
@@ -64,6 +73,23 @@ struct ContentView: View {
                 Spacer()
             }
             .padding(/*@START_MENU_TOKEN@*/.horizontal, 20.0/*@END_MENU_TOKEN@*/)
+        }
+    }
+}
+
+struct SheetView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    var body: some View {
+        ZStack {
+            Color.pink.ignoresSafeArea(.all)
+            VStack {
+                Text("new screen")
+                Button("back") {
+                    dismiss()
+                }
+            }
         }
     }
 }
