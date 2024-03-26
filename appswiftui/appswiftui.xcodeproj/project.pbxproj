@@ -15,6 +15,7 @@
 		D72BA1952B8BBAA7001AB906 /* ToggleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BA1942B8BBAA7001AB906 /* ToggleScreen.swift */; };
 		D72BA1972B8BBD15001AB906 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BA1962B8BBD15001AB906 /* DatePickerView.swift */; };
 		D72BA1992B8D6534001AB906 /* ProgressViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BA1982B8D6534001AB906 /* ProgressViewScreen.swift */; };
+		D72BA19D2B8EBEFE001AB906 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72BA19C2B8EBEFE001AB906 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D72BA1942B8BBAA7001AB906 /* ToggleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleScreen.swift; sourceTree = "<group>"; };
 		D72BA1962B8BBD15001AB906 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		D72BA1982B8D6534001AB906 /* ProgressViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewScreen.swift; sourceTree = "<group>"; };
+		D72BA19C2B8EBEFE001AB906 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,9 @@
 		D72BA1832B86B1DC001AB906 /* appswiftui */ = {
 			isa = PBXGroup;
 			children = (
-				D72BA1922B8BB68D001AB906 /* Navigation.swift */,
-				D72BA1862B86B1DC001AB906 /* ContentView.swift */,
-				D72BA1942B8BBAA7001AB906 /* ToggleScreen.swift */,
+				D72BA19B2B8EBEF1001AB906 /* login */,
+				D72BA19A2B8EBEDE001AB906 /* estudos */,
 				D72BA1842B86B1DC001AB906 /* appswiftuiApp.swift */,
-				D72BA1962B8BBD15001AB906 /* DatePickerView.swift */,
-				D72BA1982B8D6534001AB906 /* ProgressViewScreen.swift */,
 				D72BA1882B86B1DE001AB906 /* Assets.xcassets */,
 				D72BA18A2B86B1DE001AB906 /* Preview Content */,
 			);
@@ -77,6 +76,26 @@
 				D72BA18B2B86B1DE001AB906 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D72BA19A2B8EBEDE001AB906 /* estudos */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA1962B8BBD15001AB906 /* DatePickerView.swift */,
+				D72BA1982B8D6534001AB906 /* ProgressViewScreen.swift */,
+				D72BA1922B8BB68D001AB906 /* Navigation.swift */,
+				D72BA1862B86B1DC001AB906 /* ContentView.swift */,
+				D72BA1942B8BBAA7001AB906 /* ToggleScreen.swift */,
+			);
+			path = estudos;
+			sourceTree = "<group>";
+		};
+		D72BA19B2B8EBEF1001AB906 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA19C2B8EBEFE001AB906 /* LoginView.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72BA1932B8BB68D001AB906 /* Navigation.swift in Sources */,
+				D72BA19D2B8EBEFE001AB906 /* LoginView.swift in Sources */,
 				D72BA1972B8BBD15001AB906 /* DatePickerView.swift in Sources */,
 				D72BA1872B86B1DC001AB906 /* ContentView.swift in Sources */,
 				D72BA1992B8D6534001AB906 /* ProgressViewScreen.swift in Sources */,
