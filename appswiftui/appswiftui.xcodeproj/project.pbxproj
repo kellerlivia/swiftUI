@@ -20,6 +20,7 @@
 		D7319F302BB39AAB00CCEDD7 /* TabViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7319F2F2BB39AAB00CCEDD7 /* TabViewScreen.swift */; };
 		D7319F322BB4DFCD00CCEDD7 /* ScrollViewScren.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7319F312BB4DFCD00CCEDD7 /* ScrollViewScren.swift */; };
 		D7319F372BB4F92000CCEDD7 /* ListViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7319F362BB4F92000CCEDD7 /* ListViewScreen.swift */; };
+		D7BE73922BBB8F580087C28F /* FormScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE73912BBB8F580087C28F /* FormScreen.swift */; };
 		D7FCF27B2BB4FB8B00E0B414 /* ListObjc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCF27A2BB4FB8B00E0B414 /* ListObjc.swift */; };
 		D7FCF27D2BBB7D0C00E0B414 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCF27C2BBB7D0C00E0B414 /* ListSection.swift */; };
 		D7FCF27F2BBB7F5400E0B414 /* ListDeleteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCF27E2BBB7F5400E0B414 /* ListDeleteScreen.swift */; };
@@ -41,6 +42,7 @@
 		D7319F2F2BB39AAB00CCEDD7 /* TabViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewScreen.swift; sourceTree = "<group>"; };
 		D7319F312BB4DFCD00CCEDD7 /* ScrollViewScren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewScren.swift; sourceTree = "<group>"; };
 		D7319F362BB4F92000CCEDD7 /* ListViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewScreen.swift; sourceTree = "<group>"; };
+		D7BE73912BBB8F580087C28F /* FormScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormScreen.swift; sourceTree = "<group>"; };
 		D7FCF27A2BB4FB8B00E0B414 /* ListObjc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListObjc.swift; sourceTree = "<group>"; };
 		D7FCF27C2BBB7D0C00E0B414 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
 		D7FCF27E2BBB7F5400E0B414 /* ListDeleteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDeleteScreen.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		D72BA1832B86B1DC001AB906 /* appswiftui */ = {
 			isa = PBXGroup;
 			children = (
+				D7BE73902BBB8F3E0087C28F /* Form */,
 				D72BA19B2B8EBEF1001AB906 /* login */,
 				D72BA19A2B8EBEDE001AB906 /* estudos */,
 				D72BA1842B86B1DC001AB906 /* appswiftuiApp.swift */,
@@ -116,6 +119,14 @@
 				D72BA19C2B8EBEFE001AB906 /* LoginView.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		D7BE73902BBB8F3E0087C28F /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE73912BBB8F580087C28F /* FormScreen.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 		D7FCF2792BB4FB7800E0B414 /* List */ = {
@@ -211,6 +222,7 @@
 				D7FCF27D2BBB7D0C00E0B414 /* ListSection.swift in Sources */,
 				D7FCF27B2BB4FB8B00E0B414 /* ListObjc.swift in Sources */,
 				D7FCF2812BBB824000E0B414 /* ListMoveScreen.swift in Sources */,
+				D7BE73922BBB8F580087C28F /* FormScreen.swift in Sources */,
 				D72BA1852B86B1DC001AB906 /* appswiftuiApp.swift in Sources */,
 				D7319F302BB39AAB00CCEDD7 /* TabViewScreen.swift in Sources */,
 				D72BA1952B8BBAA7001AB906 /* ToggleScreen.swift in Sources */,
