@@ -97,7 +97,7 @@
 		D72BA19A2B8EBEDE001AB906 /* estudos */ = {
 			isa = PBXGroup;
 			children = (
-				D7FCF2792BB4FB7800E0B414 /* list */,
+				D7FCF2792BB4FB7800E0B414 /* List */,
 				D72BA1962B8BBD15001AB906 /* DatePickerView.swift */,
 				D72BA1982B8D6534001AB906 /* ProgressViewScreen.swift */,
 				D72BA1922B8BB68D001AB906 /* Navigation.swift */,
@@ -118,7 +118,7 @@
 			path = login;
 			sourceTree = "<group>";
 		};
-		D7FCF2792BB4FB7800E0B414 /* list */ = {
+		D7FCF2792BB4FB7800E0B414 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				D7319F362BB4F92000CCEDD7 /* ListViewScreen.swift */,
@@ -127,7 +127,7 @@
 				D7FCF27E2BBB7F5400E0B414 /* ListDeleteScreen.swift */,
 				D7FCF2802BBB824000E0B414 /* ListMoveScreen.swift */,
 			);
-			path = list;
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
