@@ -85,7 +85,7 @@
 			children = (
 				D7CA8B842BBCE7CF000EF04C /* Notas */,
 				D7BE73902BBB8F3E0087C28F /* Form */,
-				D72BA19A2B8EBEDE001AB906 /* estudos */,
+				D72BA19A2B8EBEDE001AB906 /* Estudos */,
 				D72BA1842B86B1DC001AB906 /* appswiftuiApp.swift */,
 				D72BA1882B86B1DE001AB906 /* Assets.xcassets */,
 				D72BA18A2B86B1DE001AB906 /* Preview Content */,
@@ -101,10 +101,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D72BA19A2B8EBEDE001AB906 /* estudos */ = {
+		D72BA19A2B8EBEDE001AB906 /* Estudos */ = {
 			isa = PBXGroup;
 			children = (
+				D7C978162BBCF440001DB6B6 /* Elements */,
 				D7FCF2792BB4FB7800E0B414 /* List */,
+			);
+			path = Estudos;
+			sourceTree = "<group>";
+		};
+		D7BE73902BBB8F3E0087C28F /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE73912BBB8F580087C28F /* FormScreen.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		D7C978162BBCF440001DB6B6 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
 				D72BA1962B8BBD15001AB906 /* DatePickerView.swift */,
 				D72BA1982B8D6534001AB906 /* ProgressViewScreen.swift */,
 				D72BA1922B8BB68D001AB906 /* Navigation.swift */,
@@ -114,15 +130,7 @@
 				D7319F2F2BB39AAB00CCEDD7 /* TabViewScreen.swift */,
 				D7319F312BB4DFCD00CCEDD7 /* ScrollViewScren.swift */,
 			);
-			path = estudos;
-			sourceTree = "<group>";
-		};
-		D7BE73902BBB8F3E0087C28F /* Form */ = {
-			isa = PBXGroup;
-			children = (
-				D7BE73912BBB8F580087C28F /* FormScreen.swift */,
-			);
-			path = Form;
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		D7CA8B842BBCE7CF000EF04C /* Notas */ = {
