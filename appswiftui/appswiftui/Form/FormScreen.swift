@@ -13,6 +13,7 @@ struct FormScreen: View {
     @State var email: String = ""
     @State var feedback: String = ""
     @State var nota: Float = 5
+    @State var isPresentedAlert: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -60,6 +61,7 @@ struct FormScreen: View {
                 Section {
                     Button {
                         print("button")
+                        isPresentedAlert.toggle()
                     } label: {
                         Text("enviar feedback")
                             .frame(maxWidth: .infinity)
@@ -73,6 +75,32 @@ struct FormScreen: View {
                     
                 }
             }
+            .navigationTitle("feedback")
+            .navigationBarTitleDisplayMode(.large)
+            .alert("enviar feedback", isPresented: $isPresentedAlert) {
+                Button(action: {
+                    clearAll()
+                }, label: {
+                    Text("enviar")
+                })
+            } message: {
+                Text(messageDescription)
+            }
+        }
+    }
+    
+    func clearAll() {
+        feedback = ""
+        name = ""
+        email = ""
+        nota = 5
+    }
+    
+    var messageDescription: String {
+        if feedback.isEmpty {
+            return ""
+        } else {
+            return feedback
         }
     }
     
