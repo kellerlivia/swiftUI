@@ -17,12 +17,15 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.blue.ignoresSafeArea()
+                Color.gray.ignoresSafeArea()
                 VStack(spacing: 25) {
                     Text("Login")
                         .font(.system(size: 55, weight: .bold))
                         .foregroundStyle(.white)
+                        .padding(.top, 20)
+                    
                     Spacer()
+                    
                     Group {
                         TextField("", text: $email, prompt: Text("e-mail").foregroundStyle(.white))
                             .keyboardType(.emailAddress)
@@ -31,7 +34,7 @@ struct LoginView: View {
                     .frame(height: 40)
                     .padding(7)
                     .overlay(content: {
-                        RoundedRectangle(cornerRadius: 16).stroke(.cyan ,lineWidth: 2.0)
+                        RoundedRectangle(cornerRadius: 16).stroke(.cyan ,lineWidth: 3.0)
                     })
                     .padding(7)
                     .foregroundStyle(.white)
