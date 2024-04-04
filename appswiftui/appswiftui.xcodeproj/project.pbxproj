@@ -25,6 +25,10 @@
 		D7319F322BB4DFCD00CCEDD7 /* ScrollViewScren.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7319F312BB4DFCD00CCEDD7 /* ScrollViewScren.swift */; };
 		D7319F372BB4F92000CCEDD7 /* ListViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7319F362BB4F92000CCEDD7 /* ListViewScreen.swift */; };
 		D7814FE82BBE285E00FF96FE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D7814FE72BBE285E00FF96FE /* FirebaseAuth */; };
+		D7814FEC2BBE2E2500FF96FE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7814FEB2BBE2E2500FF96FE /* Note.swift */; };
+		D7814FEF2BBE2E7A00FF96FE /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7814FEE2BBE2E7A00FF96FE /* NoteViewModel.swift */; };
+		D7814FF12BBE37EA00FF96FE /* AddNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7814FF02BBE37EA00FF96FE /* AddNotesView.swift */; };
+		D7814FF32BBE3B2E00FF96FE /* NotesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7814FF22BBE3B2E00FF96FE /* NotesDetailView.swift */; };
 		D7BE73922BBB8F580087C28F /* FormScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE73912BBB8F580087C28F /* FormScreen.swift */; };
 		D7C978182BBD0828001DB6B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7C978172BBD0828001DB6B6 /* GoogleService-Info.plist */; };
 		D7C9781B2BBD09EC001DB6B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9781A2BBD09EC001DB6B6 /* AppDelegate.swift */; };
@@ -51,6 +55,10 @@
 		D7319F2F2BB39AAB00CCEDD7 /* TabViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewScreen.swift; sourceTree = "<group>"; };
 		D7319F312BB4DFCD00CCEDD7 /* ScrollViewScren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewScren.swift; sourceTree = "<group>"; };
 		D7319F362BB4F92000CCEDD7 /* ListViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewScreen.swift; sourceTree = "<group>"; };
+		D7814FEB2BBE2E2500FF96FE /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D7814FEE2BBE2E7A00FF96FE /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		D7814FF02BBE37EA00FF96FE /* AddNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesView.swift; sourceTree = "<group>"; };
+		D7814FF22BBE3B2E00FF96FE /* NotesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailView.swift; sourceTree = "<group>"; };
 		D7BE73912BBB8F580087C28F /* FormScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormScreen.swift; sourceTree = "<group>"; };
 		D7C978172BBD0828001DB6B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7C9781A2BBD09EC001DB6B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +144,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D7814FEA2BBE2DB100FF96FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7814FEB2BBE2E2500FF96FE /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7814FED2BBE2E6A00FF96FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7814FEE2BBE2E7A00FF96FE /* NoteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D7BE73902BBB8F3E0087C28F /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +186,7 @@
 		D7CA8B842BBCE7CF000EF04C /* Notas */ = {
 			isa = PBXGroup;
 			children = (
+				D7814FEA2BBE2DB100FF96FE /* Model */,
 				D7CA8B8B2BBCF11E000EF04C /* Notes */,
 				D7CA8B882BBCEF56000EF04C /* Register */,
 				D7CA8B852BBCE81F000EF04C /* Login */,
@@ -188,7 +213,10 @@
 		D7CA8B8B2BBCF11E000EF04C /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				D7814FED2BBE2E6A00FF96FE /* ViewModel */,
 				D7CA8B8C2BBCF12B000EF04C /* NotesView.swift */,
+				D7814FF02BBE37EA00FF96FE /* AddNotesView.swift */,
+				D7814FF22BBE3B2E00FF96FE /* NotesDetailView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -296,12 +324,16 @@
 				D7CA8B872BBCE834000EF04C /* LoginView.swift in Sources */,
 				D72BA1872B86B1DC001AB906 /* ContentView.swift in Sources */,
 				D72BA1992B8D6534001AB906 /* ProgressViewScreen.swift in Sources */,
+				D7814FF32BBE3B2E00FF96FE /* NotesDetailView.swift in Sources */,
 				D7CA8B8A2BBCEF63000EF04C /* RegisterView.swift in Sources */,
 				D7FCF27D2BBB7D0C00E0B414 /* ListSection.swift in Sources */,
 				D7FCF27B2BB4FB8B00E0B414 /* ListObjc.swift in Sources */,
 				D7FCF2812BBB824000E0B414 /* ListMoveScreen.swift in Sources */,
 				D7CA8B8D2BBCF12B000EF04C /* NotesView.swift in Sources */,
+				D7814FF12BBE37EA00FF96FE /* AddNotesView.swift in Sources */,
+				D7814FEF2BBE2E7A00FF96FE /* NoteViewModel.swift in Sources */,
 				D7BE73922BBB8F580087C28F /* FormScreen.swift in Sources */,
+				D7814FEC2BBE2E2500FF96FE /* Note.swift in Sources */,
 				D72BA1852B86B1DC001AB906 /* appswiftuiApp.swift in Sources */,
 				D7319F302BB39AAB00CCEDD7 /* TabViewScreen.swift in Sources */,
 				D72BA1952B8BBAA7001AB906 /* ToggleScreen.swift in Sources */,

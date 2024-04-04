@@ -47,7 +47,8 @@ struct LoginView: View {
                     Spacer()
                     
                     Button {
-                        loginUser()
+//                        loginUser()
+                        goNotes.toggle()
                     } label: {
                         Text("login")
                             .frame(width: 210, height: 45)
